@@ -1,7 +1,7 @@
 {
   "name": "clashofclans-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "clashofclans-api",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
