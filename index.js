@@ -1,4 +1,4 @@
-const PORT = process.env.PORT // this is for deploying on heroku
+const PORT = process.env.PORT || 8000 // this is for deploying on heroku
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
@@ -37,7 +37,7 @@ pages.forEach(pages => {
         })
 })
 
-app.get('/', (res) => {
+app.get('/', (req, res) => {
     res.json("welcom to the coc api")
 })
 
